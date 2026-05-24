@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyzo - Best Plywood & Wood Panel Supplier in Bangalore</title>
+    <meta name="description" content="Kyzo is Bangalore's trusted supplier for plywood, MDF, laminates, adhesives, hardware, blockboards & doors. 1000+ brands, 25000+ products, 3000+ happy customers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #8B6914;
+            --primary-dark: #6B4F0B;
+            --primary-light: #C4A35A;
+            --secondary: #2C2C2C;
+            --accent: #D4A843;
+            --bg-cream: #FAF7F2;
+            --bg-white: #FFFFFF;
+            --bg-dark: #1A1A1A;
+            --text-dark: #1A1A1A;
+            --text-medium: #4A4A4A;
+            --text-light: #888888;
+            --border: #E8E0D4;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
+            --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: var(--bg-cream);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-cream);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-light);
+            border-radius: 4px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(250, 247, 242, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo i {
+            font-size: 24px;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 16px rgba(139, 105, 20, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(139, 105, 20, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .btn-call {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .btn-call:hover {
+            background: #000;
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 24px 80px;
+            background: linear-gradient(135deg, var(--bg-cream) 0%, #F0E8D8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(196, 163, 90, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 105, 20, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(139, 105, 20, 0.1);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(139, 105, 20, 0.2);
+        }
+
+        .hero-badge i {
+            color: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: rgba(212, 168, 67, 0.3);
+            border-radius: 4px;
+            z-index: -1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-medium);
+            margin-bottom: 32px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .trust-item i {
+            color: var(--accent);
+            font-size: 16px;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 560px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            object-fit: cover;
+            background: linear-gradient(135deg, #E8DCC8, #D4C4A8);
+            min-height: 400px;
+        }
+
+        .hero-image:hover img {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--primary-light);
+            border-radius: var(--radius-lg);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 80px 24px;
+            background: var(--bg-white);
+            position: relative;
+        }
+
+        .stats-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 40px 24px;
+            border-radius: var(--radius-md);
+            background: var(--bg-cream);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 16px rgba(139, 105, 20, 0.3);
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 100px 24px;
+            background: var(--bg-cream);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 60px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(139, 105, 20, 0.1);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            color: var(--text-medium);
+            font-size: 16px;
+        }
+
+        .products-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .product-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .product-image {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #F0E8D8, #E8DCC8);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.08);
+        }
+
+        .product-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+
+        .product-overlay .btn {
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+
+        .product-info {
+            padding: 24px;
+        }
+
+        .product-info h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .product-info p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .product-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 13px;
+            color: var(--accent);
+        }
+
+        /* Why Choose Us */
+        .why-section {
+            padding: 100px 24px;
+            background: var(--bg-white);
+        }
+
+        .why-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image {
+            position: relative;
+        }
+
+        .why-image img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            object-fit: cover;
+            background: linear-gradient(135deg, #E8DCC8, #D4C4A8);
+            min-height: 400px;
+        }
+
+        .why-image::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: -30px;
+            bottom: -30px;
+            border: 2px solid var(--primary-light);
+            border-radius: var(--radius-lg);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .why-content h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 20px;
+        }
+
+        .why-content > p {
+            color: var(--text-medium);
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(139, 105, 20, 0.25);
+        }
+
+        .feature-text h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 24px;
+            background: linear-gradient(135deg, var(--bg-cream) 0%, #F0E8D8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(196, 163, 90, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            color: var(--text-medium);
+            margin-bottom: 40px;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-method:hover {
+            transform: translateX(8px);
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-method-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-method-icon.whatsapp {
+            background: rgba(37, 211, 102, 0.1);
+            color: #25D366;
+        }
+
+        .contact-method-icon.phone {
+            background: rgba(139, 105, 20, 0.1);
+            color: var(--primary);
+        }
+
+        .contact-method-icon.email {
+            background: rgba(212, 168, 67, 0.1);
+            color: var(--accent);
+        }
+
+        .contact-method-icon.location {
+            background: rgba(44, 44, 44, 0.1);
+            color: var(--secondary);
+        }
+
+        .contact-method-text h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .contact-method-text p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .contact-form-wrapper {
+            background: var(--bg-white);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form-wrapper > p {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-medium);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: var(--text-dark);
+            background: var(--bg-cream);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--bg-white);
+            box-shadow: 0 0 0 4px rgba(139, 105, 20, 0.08);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .form-note i {
+            color: #25D366;
+            margin-right: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-dark);
+            color: white;
+            padding: 80px 24px 0;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo {
+            color: var(--primary-light);
+            margin-bottom: 20px;
+            display: inline-flex;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--primary-light);
+            padding-left: 4px;
+        }
+
+        .footer-column ul li a i {
+            font-size: 10px;
+            color: var(--accent);
+        }
+
+        .footer-contact p {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact p i {
+            color: var(--accent);
+            width: 16px;
+        }
+
+        .footer-contact a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .footer-bottom a {
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--primary-light);
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            animation: bounceIn 0.6s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .floating-whatsapp a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .floating-whatsapp a::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50px;
+            background: rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+
+        .floating-whatsapp a:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        }
+
+        .floating-whatsapp i {
+            font-size: 24px;
+        }
+
+        .floating-whatsapp span {
+            white-space: nowrap;
+        }
+
+        /* Image fallback placeholder */
+        .img-fallback {
+            background: linear-gradient(135deg, #F0E8D8, #E8DCC8) !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hero-container,
+            .why-grid,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .why-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: var(--bg-cream);
+                flex-direction: column;
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 1px solid var(--border);
+                box-shadow: var(--shadow-md);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-cta-group {
+                display: none;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                justify-content: center;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 32px 24px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .floating-whatsapp a {
+                padding: 14px 18px;
+            }
+
+            .floating-whatsapp span {
+                display: none;
+            }
+
+            .why-image::after {
+                display: none;
+            }
+
+            .hero-image::before {
+                display: none;
+            }
+        }
+
+        /* Animations on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-tree"></i>
+                Kyzo
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-us">Why Kyzo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta-group">
+                <a href="tel:+919876543210" class="btn btn-call">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20your%20products" 
+                   class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    Bangalore's #1 Plywood & Wood Panel Supplier
+                </div>
+                <h1>
+                    Premium Quality <span>Wood Materials</span> for Every Project
+                </h1>
+                <p>
+                    From plywood to laminates, MDF to hardware — Kyzo delivers top-grade materials 
+                    trusted by 1000+ architects, 3000+ customers, and 1000+ brands across Bangalore.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20want%20to%20get%20a%20quote%20for%20my%20project" 
+                       class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Instant Quote on WhatsApp
+                    </a>
+                    <a href="#products" class="btn btn-outline">
+                        <i class="fas fa-th-large"></i> Explore Products
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Genuine Products</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Best Price Guarantee</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.plyonline.com.au/987daeb5f515c3e12eca2bb702fa91ea8009d86f.webp" 
+                     alt="Premium Plywood Stack - Kyzo Bangalore"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;max-width:560px;height:400px;border-radius:24px;\'><i class=\'fas fa-layer-group\' style=\'font-size:48px;margin-bottom:12px;display:block;\'></i>Premium Plywood</div>'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Trusted Brands</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon">
+                    <i class="fas fa-boxes-stacked"></i>
+                </div>
+                <div class="stat-number">25,000+</div>
+                <div class="stat-label">Products to Choose From</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number">3,000+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Architects & Designers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="section-header animate-on-scroll">
+            <div class="section-tag">
+                <i class="fas fa-cube"></i> Our Collection
+            </div>
+            <h2>Explore Our Product Range</h2>
+            <p>High-quality materials sourced from the best manufacturers, delivered right to your doorstep in Bangalore.</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-psd/stack-plywood-sheets_390586888.htm" 
+                         alt="Plywood"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-layer-group\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Plywood</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Plywood" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Plywood</h3>
+                    <p>Dealers, Distributors, Sellers & Suppliers in Bangalore. Premium quality plywood for furniture, interiors & construction.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹45/sqft</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.9
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://www.lpmexpress.com/f1908f38a0c143b03f74a2874be857eada1c7e9b.jpg" 
+                         alt="Kyzo MDF"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-square\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>MDF Board</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20MDF%20Boards" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Kyzo MDF</h3>
+                    <p>High-density fiberboard perfect for cabinets, shelving, and decorative panels. Smooth finish & durable.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹38/sqft</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.8
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://services.ibo.com/0600b34af51149adad3a6648de2fbaccf510802b.webp" 
+                         alt="Kyzo Adhesives"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-fill-drip\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Adhesives</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Adhesives" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Kyzo Adhesives</h3>
+                    <p>Industrial-grade wood adhesives, Fevicol, and strong bonding solutions for laminates and furniture.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹180/kg</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.9
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://topologroup.com/c074cdb5cb8b4a4362b228eb66f8ad82285f6e22.jpg" 
+                         alt="Laminates"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-palette\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Laminates</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Laminates" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Laminates</h3>
+                    <p>HPL laminates, compact laminates, and decorative panels in 1000+ colors, textures & finishes.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹850/sheet</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.7
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://images.baldwinhardware.com/76dd386d36d3ae2d15875aa68486b33ae2c4ae90" 
+                         alt="Hardware"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-tools\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Hardware</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Hardware" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Hardware</h3>
+                    <p>Premium hinges, drawer slides, handles, kitchen fittings & accessories from top brands.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹25/pc</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.8
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://cdn.shopify.com/705ce0117a4e20755c9a7c5eade3a711715b4048.jpg" 
+                         alt="Blockboards"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-cubes\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Blockboards</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Blockboards" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Blockboards</h3>
+                    <p>Laminated, pre-laminated & waterproof blockboards. Ideal for doors, partitions & long furniture.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹52/sqft</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.6
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <img src="https://images.woodenstreet.de/2aec38c0bebbc3127e935994918c3c267d8f64a7.jpg" 
+                         alt="Doors"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:100%;\'><i class=\'fas fa-door-open\' style=\'font-size:32px;margin-bottom:8px;display:block;\'></i>Doors</div>'">
+                    <div class="product-overlay">
+                        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20Doors" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Doors</h3>
+                    <p>Flush doors, veneer doors, laminated doors & custom-designed doors for homes & offices.</p>
+                    <div class="product-meta">
+                        <span class="product-price">From ₹2,500</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i> 4.9
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section" id="why-us">
+        <div class="why-grid">
+            <div class="why-image animate-on-scroll">
+                <img src="https://img.magnific.com/fa29fae856e055b690cd164ad0ff952e2bcc0499.jpg" 
+                     alt="Kyzo Quality Materials"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-fallback\' style=\'width:100%;height:400px;border-radius:24px;\'><i class=\'fas fa-gem\' style=\'font-size:48px;margin-bottom:12px;display:block;\'></i>Premium Quality Wood</div>'">
+            </div>
+            <div class="why-content animate-on-scroll">
+                <div class="section-tag">
+                    <i class="fas fa-gem"></i> Why Choose Us
+                </div>
+                <h2>Built on Trust, Delivered with Quality</h2>
+                <p>For years, Kyzo has been the go-to destination for architects, interior designers, and homeowners in Bangalore who refuse to compromise on quality.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>100% Genuine Products</h4>
+                            <p>Every product is sourced directly from authorized manufacturers with full warranty.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Best Price Guarantee</h4>
+                            <p>We beat any competitor's price. Get premium materials at wholesale rates.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Same-Day Delivery</h4>
+                            <p>Located in Bangalore? Get your materials delivered within hours, not days.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Expert Support</h4>
+                            <p>Our team of material experts helps you pick the right product for your project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info animate-on-scroll">
+                <div class="section-tag">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </div>
+                <h2>Let's Build Something Great Together</h2>
+                <p>Whether you're an architect planning a commercial space or a homeowner renovating your dream home — we're here to help.</p>
+
+                <div class="contact-methods">
+                    <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20your%20products" 
+                       class="contact-method" target="_blank">
+                        <div class="contact-method-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>WhatsApp Us</h4>
+                            <p>+91 98765 43210 — Instant Replies</p>
+                        </div>
+                    </a>
+                    <a href="tel:+919876543210" class="contact-method">
+                        <div class="contact-method-icon phone">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210 — Talk to an Expert</p>
+                        </div>
+                    </a>
+                    <a href="mailto:info@kyzo.in" class="contact-method">
+                        <div class="contact-method-icon email">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>Email Us</h4>
+                            <p>info@kyzo.in — We reply within 2 hours</p>
+                        </div>
+                    </a>
+                    <div class="contact-method">
+                        <div class="contact-method-icon location">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>Visit Our Store</h4>
+                            <p>Bangalore, Karnataka — Open Mon-Sat, 9AM-8PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-white); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border);">
+                    <h4 style="font-family: 'Inter', sans-serif; font-size: 15px; margin-bottom: 12px;">
+                        <i class="fas fa-clock" style="color: var(--accent); margin-right: 8px;"></i>
+                        Business Hours
+                    </h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 14px; color: var(--text-medium);">
+                        <div>Monday – Saturday</div>
+                        <div style="font-weight: 600;">9:00 AM – 8:00 PM</div>
+                        <div>Sunday</div>
+                        <div style="font-weight: 600; color: var(--primary);">10:00 AM – 4:00 PM</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper animate-on-scroll">
+                <h3>Send Us a Message</h3>
+                <p>Fill the form below and we'll get back to you instantly via WhatsApp or call.</p>
+                <form id="enquiryForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Interested In</label>
+                        <select id="product" name="product" required>
+                            <option value="">Select a product...</option>
+                            <option value="Plywood">Plywood</option>
+                            <option value="MDF">MDF Board</option>
+                            <option value="Adhesives">Adhesives</option>
+                            <option value="Laminates">Laminates</option>
+                            <option value="Hardware">Hardware</option>
+                            <option value="Blockboards">Blockboards</option>
+                            <option value="Doors">Doors</option>
+                            <option value="Multiple">Multiple Products</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Requirements</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project, quantity needed, delivery location..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fab fa-whatsapp"></i> Send Enquiry on WhatsApp
+                    </button>
+                    <p class="form-note">
+                        <i class="fab fa-whatsapp"></i> You will receive an instant reply on WhatsApp
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fas fa-tree"></i>
+                    Kyzo
+                </a>
+                <p>Bangalore's most trusted supplier of plywood, MDF, laminates, adhesives, hardware, blockboards & doors. Serving architects, designers & homeowners since day one.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Plywood</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> MDF Board</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Laminates</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Hardware</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Adhesives</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Why Kyzo</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@kyzo.in">info@kyzo.in</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919876543210" target="_blank">WhatsApp Us</a></p>
+                <p><i class="fas fa-clock"></i> Mon-Sat: 9AM - 8PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kyzo. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/919876543210?text=Hi%20Kyzo%2C%20I%20am%20interested%20in%20your%20products" 
+           target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat on WhatsApp</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const product = document.getElementById('product').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `Hi Kyzo,%0A%0A` +
+                `*New Enquiry from Website*%0A` +
+                `-------------------%0A` +
+                `*Name:* ${name}%0A` +
+                `*Phone:* ${phone}%0A` +
+                `*Email:* ${email || 'Not provided'}%0A` +
+                `*Interested In:* ${product}%0A` +
+                `*Requirements:* ${message || 'Not specified'}%0A` +
+                `-------------------%0A` +
+                `Please send me a quote.`;
+
+            window.open(`https://wa.me/919876543210?text=${whatsappMessage}`, '_blank');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
